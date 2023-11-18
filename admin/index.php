@@ -23,6 +23,13 @@ if (!isset($_SESSION["email"])) {
     $companyData = $result->fetch_all(MYSQLI_ASSOC);
     $portfolioimg = count($companyData);
     $result->close();
+
+    // Fetch the Portfolio data to populate the table
+    $query = "SELECT * FROM blogs";
+    $result = $con->query($query);
+    $companyData = $result->fetch_all(MYSQLI_ASSOC);
+    $Totalblogs = count($companyData);
+    $result->close();
     ?>
 
     <!-- afroz -->
@@ -81,6 +88,25 @@ if (!isset($_SESSION["email"])) {
                                         <h6 class="mb-3">Our Portfolio</h6>
                                         <h4 class="mb-0"><?= $portfolioimg; ?></h4>
                                         <p class="mb-0 mt-2 font-13"><i class="bi bi-arrow-up"></i><span>Total Portfolio</span></p>
+                                    </div>
+                                    <div class="ms-auto widget-icon text-white">
+                                        <img src="./assets/images/logo-icon.png" class="rounded-circle" width="50" height="50" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a style="color: black;" href="Blogs">
+                    <div class="col">
+                        <div class="card rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <h6 class="mb-3">Our Blogs</h6>
+                                        <h4 class="mb-0"><?= $Totalblogs; ?></h4>
+                                        <p class="mb-0 mt-2 font-13"><i class="bi bi-arrow-up"></i><span>Total Blogs</span></p>
                                     </div>
                                     <div class="ms-auto widget-icon text-white">
                                         <img src="./assets/images/logo-icon.png" class="rounded-circle" width="50" height="50" alt="">

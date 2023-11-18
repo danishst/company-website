@@ -33,6 +33,13 @@
                 <div class="menu-title">Portfolio Image</div>
             </a>
         </li>
+        <li>
+            <a href="Blogs">
+                <div class="parent-icon"><i class="fa fa-users"></i>
+                </div>
+                <div class="menu-title">Our Blogs</div>
+            </a>
+        </li>
     </ul>
     <!--end navigation-->
 </aside>
