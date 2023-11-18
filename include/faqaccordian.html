@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .fimg {
+            width: 6% !important;
+        }
+
+        .accordion {
+            background-color: #ff0808;
+            color: #eee;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+
+        .w3-animate-top {
+            position: relative;
+            animation: animatetop 1.5s
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -200px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        .w3-animate-bottom {
+            position: relative;
+            animation: animatebottom 1.5s
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -200px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        .w3-animate-opacity {
+            animation: opac 3s
+        }
+
+        @keyframes opac {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+
+        .actives,
+        .accordion:hover {
+            background-color: #000;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .8s ease-out;
+            font-weight: 600;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="faq" id="faqsection" style="padding: 40px 0px 0px;">
+        <div class="container">
+            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container wow fadeInUp"
+                style="margin-bottom: 30px;">
+                <div class="col-md-12 text-center pb-4">
+                    <h3 class="abel"><i><img src="images/faq.png" alt="faq"
+                                class="img-fluid fimg"></i>&nbsp;&nbsp;&nbsp;Frequently Asked Questions</h3>
+                </div>
+                <button class="accordion w3-animate-bottom">How much does a website cost? </button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p> The cost of a website depends on the number of pages of a website. As the number of pages
+                            increases,
+                            the cost increases. The cost also depends on whether the website is static or dynamic.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">What are the different types of websites you'll
+                    develop?</button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex"> 
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p> We develop Static websites, Dynamic websites, E-Commerce websites, MLM websites, Blogging
+                            websites
+                            as per client requirement.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">Will my website be mobile-friendly?</button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p>Absolutely! Having a mobile-friendly website is more important than ever! We work hard to
+                            ensure your
+                            website looks great on a mobile devices too.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">How long does it take to build a website?</button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_quare vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p>Website development timelines depend on number of pages and complexity. A simple static website may take less time whereas a complex dynamic website takes more time. 
+                        E-commerce websites are developed within a week.</p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">Do you offer hosting services?</button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p>All of our websites plan come with hosting packages. Our Linux Web Hosting features: SSL
+                            certificate
+                            (Let's Encrypt) Modsecurity, Imunify360, free daily backup, Litespeed SSD server with 99%
+                            uptime
+                            guarantee.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">Why are you so affordable?</button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p>This is because our charges depends on work and not on client.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">Do you create WordPress websites? </button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p>Yes, WordPress is a great content management system that now powers more than 33% of the web.
+                            Its
+                            huge market share is due to it’s flexibility and ease of use.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">Will I be able to update the site myself when it’s
+                    finished?</button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p> Yes! We love it when our clients take control of their website and learn to manage it on
+                            their own.
+                            We’ll conduct a virtual training session via Skype or Any desk to help get you on your way.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="accordion w3-animate-bottom">Will you maintain my site for me? </button>
+                <div class="panel">
+                    <div id="1471940310033-e04cce97-a81d"
+                        class="vc_toggle vc_toggle_square vc_toggle_color_black vc_toggle_color_inverted vc_toggle_size_md vc_toggle_active" style="display:flex">
+                        <i class='far fa-arrow-alt-circle-right' style='font-size:30px'></i>&nbsp;&nbsp;
+                        <p>Yes, we do provide AMC services and currently providing on-going support for many of our
+                            clients
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("actives");
+                var panel = this.nextElementSibling;
+
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }        
+    </script>
+
+
+</body>
+
+</html>
