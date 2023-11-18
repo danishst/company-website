@@ -25,7 +25,7 @@ if (!isset($_SESSION["email"])) {
     $result->close();
     ?>
 
-
+    <!-- afroz -->
     <div class="wrapper">
         <!--start top header-->
         <?php include('includes/header.php') ?>
